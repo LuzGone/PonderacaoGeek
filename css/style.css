@@ -1,7 +1,4 @@
-/*-----------------------------*/
-/*------------FONTES-----------*/
-/*-----------------------------*/
-
+/*--------------Fontes----------------------*/
 @font-face {
   font-family: OpenSans;
   src: url(../fonts/OpenSans-Regular.ttf);
@@ -30,8 +27,6 @@
   font-family: BebasNeue-Regular;
   src: url(../fonts/BebasNeue-Regular.ttf);
 }
-
-/*-----------------Body-------------*/
 body {
   margin: 0px;
   background-color: #121212;
@@ -111,10 +106,8 @@ header #logo2 {
   grid-area: animes;
 }
 
-/*---------------------------*/
-/*------------MAIN-----------*/
-/*---------------------------*/
-
+/*---------------------------------------*/
+/*------------Main----------*/
 main {
   background-color: #121212;
   margin: 0;
@@ -130,19 +123,7 @@ main > section > div {
   margin-bottom: 50px;
 }
 
-.cor {
-  color: #673ab7;
-}
-
-a.cor {
-  color: #673ab7;
-}
-
-/*--------------------------------*/
-/*------------DESTAQUES-----------*/
-/*--------------------------------*/
-
-/*=====Barra de Destaques====*/
+/*------------Destaques----------*/
 #barra-destaques h2 {
   font-family: PressStart2p, sans-serif;
   font-size: 24px;
@@ -151,6 +132,10 @@ a.cor {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   display: flex;
   align-items: center;
+}
+
+.cor {
+  color: #673ab7;
 }
 
 #barra-destaques h2::after {
@@ -170,8 +155,6 @@ a.cor {
   background-color: #ffeb3b;
 }
 
-/*=====Destaques da Página====*/
-
 #destaques {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -182,21 +165,9 @@ a.cor {
   padding: 50px;
 }
 
-/*=====Organização dos Destaques====*/
-
 #destaque-1 {
   grid-area: destaque1;
 }
-
-#destaque-2 {
-  grid-area: destaque2;
-}
-
-#destaque-3 {
-  grid-area: destaque3;
-}
-
-/*=====Configuração dos Cards de Destaques====*/
 
 #destaques .minidestaques {
   display: grid;
@@ -211,8 +182,6 @@ a.cor {
   align-items: center;
 }
 
-/*=====Configuração da Imagem do Destaque====*/
-
 .imges1 {
   display: block;
   grid-row: 1/5;
@@ -221,23 +190,12 @@ a.cor {
   object-fit: cover;
 }
 
-/*=====Configuração do Título do Destaque====*/
-
 .titulo {
   grid-row: 5/6;
   padding: 0px 20px 0px 20px;
   line-height: 36px;
   height: 66px;
 }
-
-.titulo {
-  font-family: BebasNeue, sans-serif;
-  font-size: 30px;
-  color: #ffeb3b;
-  text-decoration: none;
-}
-
-/*=====Configuração do Texto do Destaque====*/
 
 .textodestaque {
   text-align: left;
@@ -249,17 +207,28 @@ a.cor {
   margin: 0px;
 }
 
-.textodestaque {
+#destaque-2 {
+  grid-area: destaque2;
+}
+
+#destaque-3 {
+  grid-area: destaque3;
+}
+
+.titulo {
+  font-family: BebasNeue, sans-serif;
+  font-size: 30px;
+  color: #ffeb3b;
+  text-decoration: none;
+}
+
+.minidestaques {
   font-family: Roboto, sans-serif;
   font-size: 20px;
   color: #ffffff;
 }
 
 /*----------------------------------*/
-/*------------PONDERAÇÕES-----------*/
-/*----------------------------------*/
-
-/*=====Barra de Últimas Ponderações====*/
 
 #barra-ponderacoes h2 {
   font-family: PressStart2p, sans-serif;
@@ -288,16 +257,58 @@ a.cor {
   background-color: #ffeb3b;
 }
 
-/*=====Configuração do Template das Ponderações====*/
-
 #ponderacoes {
   padding-left: 50px;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(10, 1fr);
   grid-gap: 20px;
+}
+a.cor {
+  color: #673ab7;
+}
+.ponds {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 20px;
+  height: 340px;
+  grid-column: 1/6;
+  border-radius: 15px;
   align-content: center;
-  justify-content: center;
+}
+
+.pond-img {
+  grid-column: 1/5;
+  width: 600px;
+  height: 300px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.pond-img > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.pond-text {
+  padding-right: 10px;
+  grid-column: 5/7;
+}
+
+.pond-text a {
+  font-family: BebasNeue, sans-serif;
+  font-size: 30px;
+  color: #ffeb3b;
+  text-decoration: none;
+}
+
+.pond-text p {
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  color: #ffffff;
 }
 
 #pond-1 {
@@ -325,44 +336,41 @@ header.sec-pages {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 20px;
-  height: 380px;
-  width: 1125px;
+  height: 340px;
   grid-column: 1/6;
   border-radius: 15px;
-  min-width: 100%;
-  min-height: 100%;
-  justify-content: center;
+  align-content: center;
 }
-/*=====Configuração das imagens das Últimas Ponderações====*/
 
-.pond-img {
+.item-img {
   grid-column: 1/5;
-  display: block;
-  width: 93%;
+  width: 600px;
   height: 300px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.item-img > img {
+  display: block;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  margin: 40px;
   border-radius: 5px;
 }
 
-/*=====Configuração dos Textos das Últimas Ponderações====*/
-
-.pond-text {
-  padding-top: 40px;
-  padding-right: 40px;
+.texto {
+  padding-right: 10px;
   grid-column: 5/7;
 }
 
-/*Formatação do Título das Últimas Ponderações*/
-.pond-text a {
+.texto a {
   font-family: BebasNeue, sans-serif;
   font-size: 30px;
   color: #ffeb3b;
   text-decoration: none;
 }
 
-/*Formatação do Texto das Últimas Ponderações*/
-.pond-text p {
+.texto p {
   font-family: Roboto, sans-serif;
   font-size: 20px;
   color: #ffffff;
@@ -476,6 +484,7 @@ a.back {
   padding-top: 10px;
   text-align: left;
   font-size: 20px;
+
 }
 #topico1 {
   color: #673ab7;
@@ -483,6 +492,7 @@ a.back {
   padding: 60px 300px 10px 100px;
   margin: 0px;
   font-size: 40px;
+  
 }
 
 #avalia {
@@ -571,8 +581,8 @@ a.back {
   border-radius: 5px;
 }
 .color {
-  color: #673ab7;
-  text-shadow: rgb(24, 22, 22) 0.1em 0.1em 0.2em;
+  color:#673ab7; 
+  text-shadow: rgb(24, 22, 22) 0.1em 0.1em 0.2em
 }
 .tex {
   padding-right: 20px;
@@ -583,11 +593,11 @@ a.back {
 .tex a {
   font-family: BebasNeue, sans-serif;
   font-size: 30px;
-  color: #ffeb3b;
+  color:#ffeb3b; 
   text-shadow: rgb(24, 22, 22) 0.1em 0.1em 0.2em;
   text-decoration: none;
 }
-.tex a:hover {
+.tex a:hover{
   text-decoration: underline;
 }
 
@@ -615,7 +625,6 @@ a.up {
   padding-top: 250px;
   padding-bottom: 10px;
 }
-/*---------------------*/
 
 /*---------Footer------*/
 footer {
