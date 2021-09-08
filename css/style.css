@@ -308,8 +308,6 @@ a.cor {
   grid-column: 1/7;
   height: 380px;
   width: 1125px;
-  min-width: 100%;
-  min-height: 100%;
 }
 
 #pond-1 {

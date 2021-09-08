@@ -1,0 +1,37 @@
+@media screen and (max-width: 1024px) {
+  header,
+  main,
+  footer {
+    width: 1024px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #destaques #destaque-3 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #ponderacoes .ponds {
+    width: 740px;
+    height: 300px;
+  }
+
+  #ponderacoes .pond-img {
+    height: 220px;
+  }
+
+  #ponderacoes .pond-text a {
+    font-family: BebasNeue, sans-serif;
+    font-size: 24px;
+    color: #ffeb3b;
+    text-decoration: none;
+  }
+
+  #ponderacoes .pond-text p {
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+  }
+}
