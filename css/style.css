@@ -211,6 +211,15 @@ a.cor {
   align-items: center;
 }
 
+#destaques .minidestaques {
+  transition: background-color 0.5s;
+  will-change: background-color;
+}
+
+#destaques .minidestaques:hover {
+  background-color: #271f35;
+}
+
 /*=====Configuração da Imagem do Destaque====*/
 
 .imges1 {
@@ -233,8 +242,15 @@ a.cor {
 .titulo {
   font-family: BebasNeue, sans-serif;
   font-size: 30px;
-  color: #ffeb3b;
   text-decoration: none;
+  color: #ffeb3b;
+}
+
+.titulo:hover {
+  font-family: BebasNeue, sans-serif;
+  font-size: 30px;
+  text-decoration: none;
+  color: #ffeb3b;
 }
 
 /*=====Configuração do Texto do Destaque====*/
@@ -310,6 +326,15 @@ a.cor {
   width: 1125px;
 }
 
+#ponderacoes .ponds {
+  transition: background-color 0.5s;
+  will-change: background-color;
+}
+
+#ponderacoes .ponds:hover {
+  background-color: #271f35;
+}
+
 #pond-1 {
   grid-row: 1/3;
 }
@@ -380,4 +405,10 @@ footer p {
   color: #ffffff;
   font-size: 12px;
   margin: 0px;
+}
+
+#segredo {
+  margin-left: 20px;
+  color: #ffffff;
+  font-size: 14px;
 }

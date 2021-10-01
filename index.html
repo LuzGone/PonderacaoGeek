@@ -7,7 +7,12 @@
     <title>Ponderação Geek</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/responsividade.css" />
-    <link rel="shotcut icon" href="/favicon/ponderaçao.png" />
+    <link rel="shotcut icon" href="./favicon/ponderaçao.png" />
+    <link rel="stylesheet" href="./css/formulario.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
   </head>
   <body>
     <header id="#">
@@ -90,7 +95,8 @@
           class="pond-img" alt="loki and loki" width="675" height="290"/>
           <div class="pond-text">
             <a href="./pages/series-pages/loki.html"
-              >Lorem ipsum dolor sit amet - <span class="cor">Loki</span></a
+              >E essa série foi muito melhor que eu esperava -
+              <span class="cor">Loki</span></a
             >
             <p>
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -106,7 +112,7 @@
           class="pond-img" alt="The owl house" width="675" height="290"/>
           <div class="pond-text">
             <a href="./pages/animations-pages/casadacoruja.html"
-              >Lorem ipsum dolor sit amet -
+              >2° Temporada da Casa da Coruja -
               <span class="cor">A Casa da Coruja</span></a
             >
             <p>
@@ -127,7 +133,7 @@
           />
           <div class="pond-text">
             <a href="./pages/filmes-pages/eraumavezemh.html"
-              >Lorem ipsum dolor sit amet -
+              >Brad Pitt e Di Caprio Juntos -
               <span class="cor">Era uma vez em Hollywood</span></a
             >
             <p>
@@ -140,16 +146,15 @@
 
         <div class="ponds" id="pond-4">
           <img
-            src="https://images2.imgbox.com/41/5e/aEO1Abj4_o.png"
+            src="https://criticalhits.com.br/wp-content/uploads/2021/06/demon-slayer-2.jpg"
+            alt="Kimetsu No Yaiba"
             class="pond-img"
-            alt="kimetsu no yaiba"
             width="675"
             height="290"
           />
           <div class="pond-text">
             <a href="./pages/animes-pages/kimetsu.html"
-              >Lorem ipsum dolor sit amet -
-              <span class="cor">Kimetsu No Yaiba</span></a
+              >Vamos Caçar Onis! - <span class="cor">Kimetsu No Yaiba</span></a
             >
             <p>
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -159,11 +164,30 @@
           </div>
         </div>
       </section>
+
+      <section id="avaliacao">
+        <h2>Avalie Nosso Site</h2>
+        <div id="div-form">
+          <form id="formulario" method="POST">
+            <textarea
+              name="opniao"
+              id="opiniao"
+              placeholder="Digite aqui sua opinião sobre o nosso site"
+            ></textarea>
+            <br />
+          </form>
+          <a href="./pages/usuario-page/login.html"><button>Enviar</button></a>
+        </div>
+      </section>
     </main>
     <footer>
       <p>
         @2021 Created by: LuzGoNe & JS <br />Made with Anger, Love, HTML & CSS
       </p>
+      <br />
+      <a id="segredo" href="./pages/secreto.html"
+        ><i class="bi bi-search"></i
+      ></a>
     </footer>
   </body>
 </html>

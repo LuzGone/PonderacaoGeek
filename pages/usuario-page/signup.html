@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="/./css/signup.css" rel="stylesheet" />
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <main>
+      <h1>Creat Account</h1>
+
+      <div class="social">
+        <a href="#"
+          ><img id="google" src="/./icon/search.png" alt="google" />
+        </a>
+
+        <a href="#"><img src="/./icon/facebook.png" alt="facebook" /> </a>
+
+        <a href="#"><img src="/./icon/twitter.png" alt="twitter" /> </a>
+      </div>
+
+      <div class="or">
+        <span>OR</span>
+      </div>
+
+      <form method="POST">
+        <div>
+          <label for="username">Username: </label>
+          <input type="text" name="username" id="username" required />
+
+          <label for="email">E-mail: </label>
+          <input type="email" name="email" id="email" required />
+        </div>
+
+        <div>
+          <label for="password">Password: </label>
+          <input type="password" name="password" id="password" required />
+
+          <label for="confirm-password">Confirm your Password:</label>
+          <input
+            type="password"
+            name="confirm-password"
+            id="confirm-password"
+            required
+          />
+        </div>
+        <input type="submit" value="Sign Up" />
+      </form>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+@font-face {
+  font-family: PressStart2p;
+  src: url(../fonts/PressStart2P-Regular.ttf);
+}
+
+#avaliacao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px;
+  font-family: PressStart2p, sans-serif;
+  text-align: center;
+}
+
+#formulario textarea {
+  width: 42.36rem;
+  height: 185px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  font-family: sans-serif;
+}
+
+#formulario {
+  text-align: center;
+  background-color: #121212;
+}
+
+#div-form {
+  background-color: #121212;
+}
+
+#div-form button {
+  border-style: none;
+  font-family: PressStart2p, sans-serif;
+  width: 8rem;
+  height: 40px;
+  border-radius: 10px;
+  border: 2px solid;
+  border-color: #673ab7;
+  color: #ffffff;
+  background-color: #121212;
+  transition: background-color 0.5s;
+  will-change: background-color;
+}
+
+#div-form button:hover {
+  color: #ffffff;
+  background-color: #673ab7;
+}
+
+#avaliacao h2 {
+  color: #ffffff;
+  margin-bottom: 40px;
+}

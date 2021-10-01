@@ -1,0 +1,190 @@
+/*-----Fontes-------*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Poppins:wght@200&family=Roboto:wght@300&family=VT323&display=swap');
+
+
+/*-----Main-------*/
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121212;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main.container {
+  background-color: #121212;
+  width: 340px;
+  height: 470px;
+  max-width: 360px;
+  min-height: 60vh;
+  padding: 2rem;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.959);
+
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+}
+
+main h1 {
+  margin-bottom: 2rem;
+  font-weight: 600;
+  position: relative;
+  color: #ffff;
+}
+
+main h1::before {
+  content: '';
+  position: absolute;
+  height: 4px;
+  width: 25px;
+  bottom: 3px;
+  left: 0px;
+  border-radius: 8px;
+  background: linear-gradient(45deg, #8e2de2, #4a0ee0);
+}
+
+.box input {
+  background: none;
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+  text-align: center;
+  border-radius: 100px;
+  border: 1px solid #4a0ee0;
+  padding: 10px 6px;
+  outline: none;
+  color: white;
+  transition: 1s;
+}
+
+.box input:focus {
+  width: 280px;
+  background: linear-gradient(45deg, #4a0ee0, #c72de2);
+}
+
+form input[type='submit'] {
+  border: 0;
+  width: 100px;
+  height: 30px;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  padding: 14px, 40px;
+  border-radius: 100px;
+  color: rgb(255, 255, 255);
+  outline: none;
+  background: #6109c6;
+  transition: all 0.3s ease;
+  font-family: 'Roboto', sans-serif;
+}
+
+form input[type='submit']:focus {
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  background: linear-gradient(to left,#894ebd,#7e2fda,#6723b4,#6109c6);
+}
+
+/*------FOOTER----------*/
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+
+.cadastro,
+.paragrafo {
+  display: flex;
+  flex-direction: column;
+  color: #ffff;
+  font-size: 12px;
+  text-align: center;
+  margin: 0px;
+}
+
+
+.footer .social-media {
+  padding: 0.4rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  width: 100%;
+  color: #ffff;
+}
+.footer .social-media a i {
+  margin: 0 0.7rem;
+  width: 15px;
+}
+.footer .social-media a {
+  text-decoration: none;
+  color: #ffff;
+  font-size: 12px;
+
+}
+
+.footer .social-media .twitter {
+  background: linear-gradient(to right, #491e72, #468aca);
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.footer .social-media .facebook {
+  background: linear-gradient(to right, #491e72, #2a5298);
+  border-radius: 8px;
+}
+.footer .social-media .google {
+  background: linear-gradient(to right, #491e72, #2a5298);
+  border-radius: 8px;
+  margin-top: 8px;
+}
+
+.twitter {
+  transition: all 0.5s ease-in;
+}
+.twitter:hover {
+  letter-spacing: 0.5px;
+}
+.facebook {
+  transition: all 0.5s ease-in;
+}
+.facebook:hover {
+  letter-spacing: 0.5px;
+}
+
+.google {
+  transition: all 0.5s ease-in;
+}
+.google:hover {
+  letter-spacing: 0.5px;
+
+}
+p {
+  text-align: left;
+  font-size: 11px;
+  padding-top: 20px;
+  padding-left: 0px;
+}
+
+#sign-up {
+  color: #9f48e6;
+  font-size: 11px;
+  margin: 5px;
+  text-shadow: #000000;
+  transition: 1s;
+}
+#sign-up:hover {
+  color: #5d2de2;
+  font-size: 15px;
+  letter-spacing: 3px;
+  font-weight: 1000;
+}
